@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/plane.svg" />
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/airport.css">
+   <title>Airport</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container _container">
+            <nav class="nav">
+               <div class="nav__logo">
+                  <h2 class="nav__title">Airline</h2>
+                  <img src="./assets/plane.svg" alt="Plane" title="Plane" width="27px">
+               </div>
+               
+               <ul class="nav__links">
+                  <li class="nav__link">Информация</li>
+                  <li class="nav__link">Онлайн-сервисы</li>
+                  <li class="nav__link">Рейсы</li>
+                  <li class="nav__link">Контакты</li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <main class="main">
+         <section class="main__flight flight">
+            <div class="flight__container _container">
+               <h3 class="flight__title">Авиапутешествуй быстро и безопасно</h3>
+               <form action="" class="form" id="form">
+                  <div class="form__inputs">
+                     <input required class="form__input" type="text" name="placeFromInput" id="placeFromInput" placeholder="Откуда">
+                     <input required class="form__input" type="text" name="placeToInput" id="placeToInput" placeholder="Куда">
+                     <input required class="form__input" type="date" name="dateFromInput" id="dateFromInput" placeholder="Туда">
+                     <input required class="form__input" type="date" name="dateToInput" id="dateToInput" placeholder="Обратно">
+                     <input required class="form__input" type="text" name="fioInput" id="fioInput" placeholder="ФИО">
+                     <button class="form__button" type="submit" onclick="addData()">Добавить</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+
+         <section class="main__flight-list flight-list">
+            <div class="flight-list__container _container">
+               <table class="table" id="table">
+                  <tr>
+                     <th>№</th>
+                     <th>Откуда</th>
+                     <th>Куда</th>
+                     <th>Дата вылета</th>
+                     <th>Дата прилета</th>
+                     <th>ФИО пассажира</th>
+                     <th>Действия</th>
+                  </tr>
+               </table>
+            </div>
+               
+         </section>
+
+         <div class="_container">
+           
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container _container">
+            <ul class="footer__column">
+               <h5 class="footer__title">Информация</h5>
+               <li><a>Новости</a></li>
+               <li><a>Часто задаваемые вопросы</a></li>
+               <li><a>Тарифы и условия</a></li>
+            </ul>
+
+            <ul class="footer__column">
+               <h5 class="footer__title">Онлайн-сервисы</h5>
+               <li><a>Купить билет</a></li>
+               <li><a>Поиск рейса</a></li>
+               <li><a>Вернуть билет</a></li>
+            </ul>
+
+            <ul class="footer__column">
+               <h5 class="footer__title">Рейсы</h5>
+               <li><a>Посмотреть рейсы</a></li>
+               <li><a>Поиск рейса</a></li>
+               <li><a>Выбор места на борту</a></li>
+            </ul>
+            
+            <div class="column">
+               <h5 class="footer__title">Контакты</h5>
+               <ul class="footer__row">
+                  <li><img src="./assets/vk.png" alt=""></li>
+                  <li><img src="./assets/github.png" alt=""></li>
+                  <li><img src="./assets/tg.webp" alt=""></li>
+            
+               </ul>
+            </ul>
+      
+      
+         </div>
+      </footer>
+   </div>
+   <script src="./js/airport.js"></script>
+</body>
+</html>
