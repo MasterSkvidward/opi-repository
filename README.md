@@ -7,3 +7,7 @@ Fundamentals of software engineering
    3. Delete flight
    4. Watch all flights
 
+## Will be added soon
+   1. Strict field validation
+   2. Authorization roles
+   3. Popular flights
