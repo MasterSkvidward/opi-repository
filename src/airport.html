@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="./assets/plane.svg" />
-   <link rel="stylesheet" href="./css/reset.css">
-   <link rel="stylesheet" href="./css/common.css">
-   <link rel="stylesheet" href="./css/airport.css">
+   <link rel="stylesheet" href="./styles/reset.css">
+   <link rel="stylesheet" href="./styles/common.css">
+   <link rel="stylesheet" href="./styles/airport.css">
    <title>Airport</title>
 </head>
 <body>
@@ -35,11 +35,11 @@
                <h3 class="flight__title">Авиапутешествуй быстро и безопасно</h3>
                <form action="" class="form" id="form">
                   <div class="form__inputs">
-                     <input required class="form__input" type="text" name="placeFromInput" id="placeFromInput" placeholder="Откуда">
-                     <input required class="form__input" type="text" name="placeToInput" id="placeToInput" placeholder="Куда">
-                     <input required class="form__input" type="date" name="dateFromInput" id="dateFromInput" placeholder="Туда">
-                     <input required class="form__input" type="date" name="dateToInput" id="dateToInput" placeholder="Обратно">
-                     <input required class="form__input" type="text" name="fioInput" id="fioInput" placeholder="ФИО">
+                     <input required class="form__input" type="text" minlength="2" maxlength="100" name="placeFromInput" id="placeFromInput" placeholder="Откуда">
+                     <input required class="form__input" type="text" minlength="2" maxlength="100" name="placeToInput" id="placeToInput" placeholder="Куда">
+                     <input required class="form__input" type="date" min="2023-12-10" name="dateFromInput" id="dateFromInput" placeholder="Туда">
+                     <input required class="form__input" type="date" min="2023-12-10" name="dateToInput" id="dateToInput" placeholder="Обратно">
+                     <input required class="form__input" type="text" minlength="5" maxlength="100" name="fioInput" id="fioInput" placeholder="ФИО">
                      <button class="form__button" type="submit" onclick="addData()">Добавить</button>
                   </div>
                </form>

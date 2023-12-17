@@ -9,7 +9,7 @@ function handleSubmit(event) {
 
 
 
-// -------------------------------------------------manipulating data-------------------------------------------------
+// -------------------------------------------------Manipulating data-------------------------------------------------
 function clearInputs() {
    document.getElementById("placeFromInput").value = "";
    document.getElementById("placeToInput").value = "";
@@ -50,7 +50,7 @@ function insertData(placeFrom, placeTo, dateFrom, dateTo, fio) {
     ;
 
    tableRowCount++;
-   // clearInputs();
+   clearInputs();
 }
 
 function deleteData(button) {
@@ -70,21 +70,21 @@ function editData(button) {
    let fio = row.cells[5]; 
    
    let placeFromInput = 
-       prompt("Enter the updated name:", 
+       prompt("Введите новое место отправления:", 
          placeFrom.innerHTML); 
    let placeToInput = 
-       prompt("Enter the updated email:", 
+       prompt("Введите новое место назначения:", 
          placeTo.innerHTML); 
    let dateFromInput = 
-       prompt("Enter the updated mobile details:", 
+       prompt("Введите дату отправления:", 
          dateFrom.innerHTML 
        ); 
    let dateToInput = 
-       prompt("Enter the updated address:", 
+       prompt("Введите новую дату прилета:", 
          dateTo.innerHTML 
        ); 
    let fioInput = 
-      prompt("Enter the updated ФИО:", 
+      prompt("Введите новое ФИО пассажира:", 
          fio.innerHTML 
       ); 
 
@@ -97,7 +97,7 @@ function editData(button) {
 
 
 
-// -------------------------------------------------requests-------------------------------------------------
+// -------------------------------------------------Requests-------------------------------------------------
 async function fetchDataAsync (url) {
    let response = await fetch(url);
    let data = await response.json();
